@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: cursive;
+}
+
+:root{
+    --cardW: 120px;
+    --cardH: 140px;
+}
+
+body{
+    height: 100vh;
+    background-color: dodgerblue;
+    display: grid;
+    grid-template: var(--cardH) var(--cardH) var(--cardH) var(--cardH)/ var(--cardW) var(--cardW) var(--cardW)var(--cardW) var(--cardW) ;
+    gap: 15px;
+    justify-content: center;
+    align-content: center;
+}
+
+.cards{
+    background-color: greenyellow;
+    height: var(--cardH);
+    width: var(--cardW); 
+}
+
