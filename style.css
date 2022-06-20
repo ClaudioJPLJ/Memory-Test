@@ -23,5 +23,15 @@ body{
     background-color: greenyellow;
     height: var(--cardH);
     width: var(--cardW); 
+    background-size: cover;
+}
+
+span {
+    background-color: blueviolet;
+    display: block;
+    position: absolute;
+    top:10%;
+    left: 25px;
+    font-size: 3.5em;
 }
 
