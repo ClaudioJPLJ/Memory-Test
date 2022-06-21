@@ -12,4 +12,4 @@ A princípio, não estou fazendo algo responsivo para celulares, pois estou com 
 
 É isso! Até a próxima... 👀
 
-<img src="https://c.tenor.com/KVzvxkMATq8AAAAC/brunhild-anime.gif" alt="anime gif">
+<img src="https://c.tenor.com/josCi7KbbisAAAAd/brunhild-anime.gif" alt="anime gif" style="width: 150px">
