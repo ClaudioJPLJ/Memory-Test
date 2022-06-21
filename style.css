@@ -4,6 +4,12 @@
     font-family: cursive;
 }
 
+@keyframes lineMove {
+    0% {top: -300px}
+    100%{top: 3000px;}
+
+}
+
 :root{
     --cardW: 120px;
     --cardH: 140px;
@@ -11,27 +17,51 @@
 
 body{
     height: 100vh;
-    background-color: dodgerblue;
+    background-color: black;
     display: grid;
-    grid-template: var(--cardH) var(--cardH) var(--cardH) var(--cardH)/ var(--cardW) var(--cardW) var(--cardW)var(--cardW) var(--cardW) ;
+    grid-template: var(--cardH) var(--cardH) var(--cardH) var(--cardH) / var(--cardW) var(--cardW) var(--cardW)var(--cardW) var(--cardW) ;
     gap: 15px;
     justify-content: center;
     align-content: center;
 }
 
 .cards{
-    background-color: greenyellow;
+    background-color:lemonchiffon;
     height: var(--cardH);
     width: var(--cardW); 
     background-size: cover;
+    border: solid 3px rgba(255, 200, 48, 0.541);
+   /* animation: borderAnim infinite 8s;*/
+    position: relative;
+    overflow: hidden;
+    border-radius: 3px;
+    animation: borderAnim 4s ;
+}
+
+hr{
+    height: 13px;
+    width: 500px;
+    right: -55px;
+    background-color: rgba(204, 204, 204, 0.26);
+    transform: rotate(40deg);
+    border: none;
+    position: absolute;
+    animation: lineMove infinite 8s;
+    animation-timing-function: ease;
 }
 
 span {
-    background-color: blueviolet;
+    color: whitesmoke;
     display: block;
     position: absolute;
-    top:10%;
-    left: 25px;
-    font-size: 3.5em;
+    top: 5%;
+    left: 1%;
+    font-size: 3em;
+}
+
+@media only screen and (max-width: 1100px) {
+    span{
+        display: none;
+    }
 }
 
